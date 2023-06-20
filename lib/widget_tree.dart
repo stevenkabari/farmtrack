@@ -1,7 +1,8 @@
+import 'package:farmtrack/pages/welcome.dart';
 import 'package:flutter/material.dart';
 import 'package:farmtrack/auth.dart';
 import 'package:farmtrack/pages/home_page.dart';
-import 'package:farmtrack/pages/login_register_page.dart';
+// import 'package:farmtrack/pages/login_register_page.dart';
 class WidgetTree extends StatefulWidget {
   const WidgetTree({super.key});
 
@@ -18,7 +19,7 @@ class _WidgetTreeState extends State<WidgetTree> {
         if (snapshot.hasData) {
           return HomePage();
         } else {
-          return const LoginPage();
+          return const Welcome();
         }
       },
     );
